@@ -1,0 +1,170 @@
+1. DONOR
+Create table donor (
+    donor_id      number(10)    generated always as identity primary key,
+    full_name     varchar2(100) not null,
+    dob           date          not null,
+    blood_type    varchar2(5)   not null,
+    gender        char(1)       not null,
+    weight_kg     number(5,2)   not null,
+    contact_no    varchar2(15)  not null unique,
+    city          varchar2(50)  not null,
+    last_donation date,
+    is_eligible   char(1)       default 'y' not null,
+    constraint chk_donor_blood    check (blood_type in ('a+','a-','b+','b-','o+','o-','ab+','ab-')),
+    constraint chk_donor_gender   check (gender in ('m','f')),
+    constraint chk_donor_eligible check (is_eligible in ('y','n')),
+    constraint chk_donor_weight   check (weight_kg >= 45)
+);
+2. BLOOD_BANK
+create table blood_bank (
+    bank_id        number(10)    generated always as identity primary key,
+    bank_name      varchar2(100) not null,
+    city           varchar2(50)  not null,
+    address        varchar2(200) not null,
+    contact_no     varchar2(15)  not null unique,
+    license_no     varchar2(30)  not null unique,
+    capacity_units number(6)     not null,
+    constraint chk_bank_capacity check (capacity_units > 0)
+);
+
+3. BLOOD_UNIT
+
+create table blood_unit (
+    unit_id         number(10)   generated always as identity primary key,
+    bank_id         number(10)   not null,
+    donor_id        number(10)   not null,
+    blood_type      varchar2(5)  not null,
+    collection_date date         not null,
+    expiry_date     date         not null,
+    status          varchar2(15) default 'AVAILABLE' not null,
+    volume_ml       number(5)    default 450 not null,
+    constraint fk_unit_bank    foreign key (bank_id)  references blood_bank(bank_id),
+    constraint fk_unit_donor   foreign key (donor_id) references donor(donor_id),
+    -- Fixed: List is now uppercase to match the UPPER() function
+    constraint chk_unit_blood  check (upper(trim(blood_type)) in 
+                                ('A+','A-','B+','B-','O+','O-','AB+','AB-')),
+    -- Fixed: List is now uppercase to match the UPPER() function
+    constraint chk_unit_status check (upper(trim(status)) in 
+                                ('AVAILABLE','RESERVED','USED','EXPIRED')),
+    constraint chk_unit_expiry check (expiry_date > collection_date)
+);
+4. HOSPITAL
+create table hospital (
+    hospital_id number(10)    generated always as identity primary key,
+    hosp_name   varchar2(100) not null,
+    address     varchar2(150) not null,
+    city        varchar2(50)  not null,
+    contact_no  varchar2(15)  not null unique,
+    license_no  varchar2(30)  not null unique,
+    hosp_type   varchar2(10)  not null,
+    constraint chk_hosp_type check (lower(hosp_type) in ('public','private'))
+);
+
+5. REQUEST
+create table request (
+    request_id     number(10)   generated always as identity primary key,
+    hospital_id    number(10)   not null,
+    blood_type     varchar2(5)  not null,
+    qty_needed     number(5)    not null,
+    urgency        varchar2(10) default 'ROUTINE' not null,
+    request_date   date         default sysdate   not null,
+    status         varchar2(15) default 'PENDING' not null,
+    fulfilled_date date,
+    constraint fk_request_hospital foreign key (hospital_id) 
+                   references hospital(hospital_id),
+    -- Constraint logic updated to UPPERCASE to match the upper() function
+    constraint chk_request_blood   check (upper(trim(blood_type)) in 
+                   ('A+','A-','B+','B-','O+','O-','AB+','AB-')),
+    constraint chk_request_urgency check (upper(trim(urgency)) in 
+                   ('ROUTINE','URGENT','CRITICAL')),
+    constraint chk_request_status  check (upper(trim(status)) in 
+                   ('PENDING','FULFILLED','CANCELLED')),
+    constraint chk_request_qty     check (qty_needed > 0)
+);
+
+6. DONATION_CAMP
+create table donation_camp (
+    camp_id        number(10)    generated always as identity primary key,
+    bank_id        number(10)    not null,
+    location       varchar2(150) not null,
+    city           varchar2(50)  not null,
+    camp_date      date          not null,
+    organizer_name varchar2(100) not null,
+    target_units   number(5)     not null,
+    actual_units   number(5)     default 0,
+    constraint fk_camp_bank    foreign key (bank_id) references blood_bank(bank_id),
+    constraint chk_camp_target check (target_units > 0),
+    constraint chk_camp_actual check (actual_units >= 0)
+);
+
+7. CAMP_PARTICIPATION  (M:M Bridge: DONOR ↔ DONATION_CAMP)
+
+create table camp_participation (
+    participation_id number(10) generated always as identity primary key,
+    camp_id          number(10) not null,
+    donor_id         number(10) not null,
+    part_date        date       not null,
+    units_donated    number(3)  default 1,
+    constraint fk_part_camp  foreign key (camp_id)  references donation_camp(camp_id),
+    constraint fk_part_donor foreign key (donor_id) references donor(donor_id),
+    constraint uq_camp_donor unique (camp_id, donor_id)
+);
+
+8. FULFILLMENT  (M:M Bridge: REQUEST ↔ BLOOD_UNIT)
+create table fulfillment (
+    fulfillment_id number(10)    generated always as identity primary key,
+    request_id     number(10)    not null,
+    unit_id        number(10)    not null,
+    fulfill_date   date          default sysdate not null,
+    fulfilled_by   varchar2(100),
+    constraint fk_fulfill_request foreign key (request_id)
+                   references request(request_id),
+    constraint fk_fulfill_unit    foreign key (unit_id)
+                   references blood_unit(unit_id),
+    constraint uq_fulfill_unit    unique (unit_id)
+);
+
+9. STAFF
+create table staff (
+    staff_id       number(10) generated always as identity primary key,
+    staff_name     varchar2(100) not null,
+    role           varchar2(50) not null,
+    bank_id        number(10),
+    hospital_id    number(10),
+    contact_no     varchar2(15) unique not null,
+    hire_date      date not null,
+    
+    constraint fk_staff_bank foreign key (bank_id)
+        references blood_bank(bank_id),
+
+    constraint fk_staff_hospital foreign key (hospital_id)
+        references hospital(hospital_id),
+
+    constraint chk_staff_role check (
+        upper(role) in ('DOCTOR','NURSE','TECHNICIAN','MANAGER')
+    )
+);
+10. BLOOD_TEST
+
+create table blood_test (
+    test_id         number(10) generated always as identity primary key,
+    unit_id         number(10) not null,
+    tested_by       number(10) not null,
+    test_date       date not null,
+    hiv_result      varchar2(10) not null,
+    hepatitis_result varchar2(10) not null,
+    malaria_result  varchar2(10) not null,
+    overall_status  varchar2(10) not null,
+
+    constraint fk_test_unit foreign key (unit_id)
+        references blood_unit(unit_id),
+
+    constraint fk_test_staff foreign key (tested_by)
+        references staff(staff_id),
+
+    constraint chk_hiv check (upper(hiv_result) in ('POSITIVE','NEGATIVE')),
+    constraint chk_hepatitis check (upper(hepatitis_result) in ('POSITIVE','NEGATIVE')),
+    constraint chk_malaria check (upper(malaria_result) in ('POSITIVE','NEGATIVE')),
+    constraint chk_overall check (upper(overall_status) in ('SAFE','UNSAFE'))
+);
+
