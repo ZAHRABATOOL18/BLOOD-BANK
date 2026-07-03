@@ -1,0 +1,292 @@
+BLOOD_BANK
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('punjab blood services','lahore','jail road, lahore','03001111001','pb-lhr-001',5000);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('islamabad central blood bank','islamabad','g-10 markaz, islamabad','03001111002','pb-isb-001',4000);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('karachi blood & tissue bank','karachi','jpmc complex, karachi','03001111003','pb-khi-001',6000);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('rawalpindi blood center','rawalpindi','holy family hosp rd, rwp','03001111004','pb-rwp-001',3500);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('peshawar regional blood bank','peshawar','khyber teaching hosp, psh','03001111005','pb-psh-001',3000);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('multan safe blood program','multan','nishtar hospital, multan','03001111006','pb-mlt-001',2800);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('quetta blood bank','quetta','sandeman provincial hosp','03001111007','pb-qta-001',2200);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('faisalabad blood center','faisalabad','allied hospital, faisalabad','03001111008','pb-fsd-001',3200);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('gujranwala regional bank','gujranwala','dhq hospital, gujranwala','03001111009','pb-grw-001',2600);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('sialkot blood services','sialkot','allama iqbal memorial hosp','03001111010','pb-skt-001',2400);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('bahawalpur blood center','bahawalpur','bahawal victoria hospital','03001111011','pb-bwp-001',2100);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('hyderabad blood bank','hyderabad','liaquat uni hosp, hyd','03001111012','pb-hyd-001',2500);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('sukkur regional blood center','sukkur','ghulam muhammad mahar hosp','03001111013','pb-suk-001',1800);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('abbottabad blood bank','abbottabad','ayub medical complex','03001111014','pb-abt-001',1900);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('mardan blood services','mardan','dhq hospital, mardan','03001111015','pb-mrd-001',1700);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('sargodha blood center','sargodha','dhq hospital, sargodha','03001111016','pb-sgh-001',2300);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('dera ghazi khan blood bank','dera ghazi khan','dhq hosp, dg khan','03001111017','pb-dgk-001',1600);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('mirpur blood services','mirpur ajk','mirpur dhq hospital','03001111018','pb-mrp-001',1500);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('rahim yar khan blood center','rahim yar khan','sheikh zayed hospital','03001111019','pb-ryk-001',2000);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('kohat blood bank','kohat','dhq hospital, kohat','03001111020','pb-kht-001',1400);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('larkana blood services','larkana','chandka medical college hosp','03001111021','pb-lrk-001',1600);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('nawabshah blood center','nawabshah','people uni of med & health sci','03001111022','pb-nws-001',1500);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('turbat regional blood bank','turbat','district headquarters hosp','03001111023','pb-tbt-001',1200);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('jhang blood services','jhang','dhq hospital, jhang','03001111024','pb-jhg-001',1800);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('okara blood center','okara','dhq hospital, okara','03001111025','pb-okr-001',1600);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('sahiwal blood bank','sahiwal','dhq hospital, sahiwal','03001111026','pb-shw-001',1700);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('muzaffarabad blood services','muzaffarabad','dhq hospital, mzbd','03001111027','pb-mzb-001',1300);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('bannu blood center','bannu','dhq hospital, bannu','03001111028','pb-bnu-001',1400);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('khushab blood bank','khushab','dhq hospital, khushab','03001111029','pb-ksb-001',1300);
+insert into blood_bank (bank_name,city,address,contact_no,license_no,capacity_units) values ('chakwal blood services','chakwal','dhq hospital, chakwal','03001111030','pb-ckw-001',1200);
+DONOR 
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('ali hassan',date '1990-03-15','a+','m',72,'03211000001','lahore',date '2024-01-10','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('sara ahmed',date '1995-06-20','b+','f',58,'03211000002','islamabad',date '2024-02-05','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('usman malik',date '1988-11-01','o+','m',80,'03211000003','karachi',date '2024-03-01','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('ayesha tariq',date '1998-04-14','ab+','f',55,'03211000004','rawalpindi',date '2023-12-20','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('bilal khan',date '1992-09-22','a-','m',68,'03211000005','peshawar',date '2023-11-15','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('fatima noor',date '2000-01-07','b-','f',52,'03211000006','lahore',null,'y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('kamran iqbal',date '1985-05-30','o-','m',75,'03211000007','multan',date '2024-02-22','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('nadia zafar',date '1993-10-12','ab-','f',60,'03211000008','islamabad',date '2024-01-10','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('tariq mehmood',date '1987-08-03','a+','m',70,'03211000009','karachi',date '2024-03-05','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('zara hussain',date '1997-02-25','b+','f',56,'03211000010','rawalpindi',date '2024-04-12','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('hassan raza',date '1991-12-18','o+','m',82,'03211000011','lahore',date '2024-01-30','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('amna sheikh',date '1996-07-09','a+','f',63,'03211000012','peshawar',date '2024-03-20','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('imran chaudhry',date '1983-03-14','b+','m',77,'03211000013','multan',date '2024-02-08','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('saima butt',date '1999-11-28','o+','f',50,'03211000014','islamabad',date '2024-04-14','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('faisal javed',date '1990-01-06','ab+','m',73,'03211000015','karachi',date '2023-12-25','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('maryam ali',date '1994-04-15','a-','f',57,'03211000016','lahore',date '2024-03-02','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('adeel farooq',date '1986-06-21','b-','m',79,'03211000017','rawalpindi',date '2024-01-11','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('hina qureshi',date '2001-09-04','o-','f',48,'03211000018','peshawar',null,'n');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('shahid nawaz',date '1989-02-17','a+','m',84,'03211000019','multan',date '2024-02-19','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('rabia siddiqui',date '1998-05-08','ab+','f',62,'03211000020','islamabad',date '2024-03-22','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('waseem ahmad',date '1984-07-11','b+','m',71,'03211000021','karachi',date '2024-04-07','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('sobia riaz',date '1995-10-29','o+','f',54,'03211000022','lahore',date '2024-01-28','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('naveed aslam',date '1980-03-13','a+','m',88,'03211000023','rawalpindi',date '2024-03-15','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('iqra bashir',date '2000-08-26','b+','f',53,'03211000024','peshawar',date '2024-04-01','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('asad mir',date '1993-01-02','o-','m',66,'03211000025','multan',date '2024-02-10','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('lubna karim',date '1997-12-20','ab-','f',59,'03211000026','islamabad',date '2024-01-05','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('rizwan shah',date '1991-04-08','a-','m',74,'03211000027','karachi',date '2024-03-18','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('naila parveen',date '1996-06-14','b+','f',61,'03211000028','lahore',date '2024-02-12','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('zubair ahmed',date '1988-11-03','o+','m',78,'03211000029','rawalpindi',date '2024-01-25','y');
+insert into donor (full_name,dob,blood_type,gender,weight_kg,contact_no,city,last_donation,is_eligible) values ('shazia bibi',date '1999-05-22','a+','f',55,'03211000030','peshawar',date '2024-04-08','y');
+HOSPITAL 
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('pakistan institute of medical sciences','g-8/3 islamabad','islamabad','05190000001','pims-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('services hospital','jail road lahore','lahore','04290000001','sh-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('aga khan university hospital','stadium road karachi','karachi','02190000001','akuh-001','private');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('holy family hospital','satellite town rawalpindi','rawalpindi','05190000002','hfh-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('lady reading hospital','peshawar city','peshawar','09190000001','lrh-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('nishtar hospital','multan road multan','multan','06190000001','nh-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('shaukat khanum hospital','johar town lahore','lahore','04290000002','skm-001','private');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('cmh rawalpindi','the mall rawalpindi','rawalpindi','05190000003','cmh-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('liaquat national hospital','national stadium karachi','karachi','02190000002','lnh-001','private');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('benazir bhutto hospital','rawalpindi','rawalpindi','05190000004','bbh-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('allied hospital faisalabad','faisalabad','faisalabad','04190000001','ah-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('jinnah hospital lahore','lahore','lahore','04290000003','jh-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('sandeman hospital','quetta','quetta','08190000001','sph-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('ayub teaching hospital','abbottabad','abbottabad','09990000001','ath-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('liaquat university hospital','hyderabad','hyderabad','02290000001','luh-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('civil hospital karachi','karachi','karachi','02190000003','chk-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('gulab devi hospital','lahore','lahore','04290000004','gdh-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('khyber teaching hospital','peshawar','peshawar','09190000002','kth-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('dhq hospital gujranwala','gujranwala','gujranwala','05590000001','dhq-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('allama iqbal memorial hospital','sialkot','sialkot','05290000001','aim-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('bahawal victoria hospital','bahawalpur','bahawalpur','06290000001','bvh-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('sheikh zayed hospital','rahim yar khan','rahim yar khan','06890000001','szh-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('dhq hospital sargodha','sargodha','sargodha','04890000001','dhq-002','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('mardan medical complex','mardan','mardan','09370000001','mmc-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('chandka medical college hospital','larkana','larkana','07440000001','cmc-001','public');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('fatima memorial hospital','lahore','lahore','04290000005','fmh-001','private');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('south city hospital','karachi','karachi','02190000004','sch-001','private');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('rehman medical institute','peshawar','peshawar','09190000003','rmi-001','private');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('doctors hospital','lahore','lahore','04290000006','dh-001','private');
+insert into hospital (hosp_name,address,city,contact_no,license_no,hosp_type) values ('national hospital lahore','lahore','lahore','04290000007','nhl-001','private');
+
+DONATION_CAMP 
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (1,'city hospital ground','islamabad',to_date('01-JAN-2024','dd-mon-yyyy'),'red crescent',100,85);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (2,'jail road park','lahore',to_date('03-JAN-2024','dd-mon-yyyy'),'edhi foundation',120,110);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (3,'stadium road hall','karachi',to_date('05-JAN-2024','dd-mon-yyyy'),'life savers',90,70);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (4,'satellite town center','rawalpindi',to_date('07-JAN-2024','dd-mon-yyyy'),'blood heroes',80,65);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (5,'university ground','peshawar',to_date('09-JAN-2024','dd-mon-yyyy'),'youth club',110,95);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (1,'civil hospital lawn','lahore',to_date('11-JAN-2024','dd-mon-yyyy'),'red crescent',100,88);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (2,'mall road camp','lahore',to_date('13-JAN-2024','dd-mon-yyyy'),'edhi foundation',130,120);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (3,'dha ground','karachi',to_date('15-JAN-2024','dd-mon-yyyy'),'life savers',140,130);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (4,'cmh ground','rawalpindi',to_date('17-JAN-2024','dd-mon-yyyy'),'blood heroes',90,75);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (5,'city center','islamabad',to_date('19-JAN-2024','dd-mon-yyyy'),'humanity first',100,92);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (1,'bazar square','quetta',to_date('21-JAN-2024','dd-mon-yyyy'),'red crescent',85,70);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (2,'university hall','faisalabad',to_date('23-JAN-2024','dd-mon-yyyy'),'edhi foundation',120,115);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (3,'park avenue','multan',to_date('25-JAN-2024','dd-mon-yyyy'),'life savers',95,80);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (4,'sports complex','lahore',to_date('27-JAN-2024','dd-mon-yyyy'),'blood heroes',150,140);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (5,'community center','rawalpindi',to_date('29-JAN-2024','dd-mon-yyyy'),'youth club',110,100);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (1,'hospital parking','karachi',to_date('31-JAN-2024','dd-mon-yyyy'),'red crescent',90,85);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (2,'city mall','islamabad',to_date('02-FEB-2024','dd-mon-yyyy'),'edhi foundation',100,90);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (3,'railway station','lahore',to_date('04-FEB-2024','dd-mon-yyyy'),'life savers',130,125);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (4,'bus terminal','peshawar',to_date('06-FEB-2024','dd-mon-yyyy'),'blood heroes',120,110);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (5,'town hall','multan',to_date('08-FEB-2024','dd-mon-yyyy'),'humanity first',100,95);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (1,'college ground','faisalabad',to_date('10-FEB-2024','dd-mon-yyyy'),'red crescent',80,75);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (2,'sports stadium','lahore',to_date('12-FEB-2024','dd-mon-yyyy'),'edhi foundation',140,135);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (3,'city park','karachi',to_date('14-FEB-2024','dd-mon-yyyy'),'life savers',150,145);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (4,'hospital lobby','rawalpindi',to_date('16-FEB-2024','dd-mon-yyyy'),'blood heroes',90,85);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (5,'metro station','islamabad',to_date('18-FEB-2024','dd-mon-yyyy'),'youth club',100,98);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (1,'market square','quetta',to_date('20-FEB-2024','dd-mon-yyyy'),'red crescent',110,100);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (2,'city hospital','lahore',to_date('22-FEB-2024','dd-mon-yyyy'),'edhi foundation',120,118);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (3,'university gate','karachi',to_date('24-FEB-2024','dd-mon-yyyy'),'life savers',130,120);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (4,'town center','peshawar',to_date('26-FEB-2024','dd-mon-yyyy'),'blood heroes',90,80);
+insert into donation_camp (bank_id,location,city,camp_date,organizer_name,target_units,actual_units) values (5,'central park','multan',to_date('28-FEB-2024','dd-mon-yyyy'),'humanity first',100,97);
+BLOOD_UNIT
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (1,1,'A+',date '2024-01-10',date '2024-04-10', 'used',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (2,2,'B+',date '2024-01-12',date '2024-04-12','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (3,3,'O+',date '2024-01-14',date '2024-04-14','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (4,4,'AB+',date '2024-01-16',date '2024-04-16','RESERVED',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (5,5,'A-',date '2024-01-18',date '2024-04-18','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (6,6,'B-',date '2024-01-20',date '2024-04-20','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (1,7,'O-',date '2024-01-22',date '2024-04-22','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (2,8,'AB-',date '2024-01-24',date '2024-04-24','USED',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (3,9,'A+',date '2024-01-26',date '2024-04-26','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (4,10,'B+',date '2024-01-28',date '2024-04-28','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (5,11,'O+',date '2024-02-01',date '2024-05-01','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (6,12,'A+',date '2024-02-03',date '2024-05-03','RESERVED',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (1,13,'B+',date '2024-02-05',date '2024-05-05','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (2,14,'O+',date '2024-02-07',date '2024-05-07','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (3,15,'AB+',date '2024-02-09',date '2024-05-09','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (4,16,'A-',date '2024-02-11',date '2024-05-11','USED',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (5,17,'B-',date '2024-02-13',date '2024-05-13','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (6,18,'O-',date '2024-02-15',date '2024-05-15','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (1,19,'A+',date '2024-02-17',date '2024-05-17','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (2,20,'B+',date '2024-02-19',date '2024-05-19','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (3,21,'O+',date '2024-02-21',date '2024-05-21','EXPIRED',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (4,22,'AB+',date '2024-02-23',date '2024-05-23','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (5,23,'A+',date '2024-02-25',date '2024-05-25','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (6,24,'B-',date '2024-02-27',date '2024-05-27','RESERVED',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (1,25,'O-',date '2024-03-01',date '2024-06-01','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (2,26,'AB-',date '2024-03-03',date '2024-06-03','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (3,27,'A-',date '2024-03-05',date '2024-06-05','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (4,28,'B+',date '2024-03-07',date '2024-06-07','USED',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (5,29,'O+',date '2024-03-09',date '2024-06-09','AVAILABLE',450);
+insert into blood_unit (bank_id,donor_id,blood_type,collection_date,expiry_date,status,volume_ml) values (6,30,'A+',date '2024-03-11',date '2024-06-11','AVAILABLE',450);
+
+REQUEST 
+select hospital_id, hosp_name from hospital;
+
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (1,'A+',5,'URGENT',to_date('01-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('03-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (7,'O+',3,'CRITICAL',to_date('02-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('04-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (8,'B+',2,'ROUTINE',to_date('03-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (9,'A-',4,'URGENT',to_date('04-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (10,'AB+',1,'CRITICAL',to_date('05-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('06-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (15,'O-',3,'ROUTINE',to_date('06-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('08-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (16,'A+',2,'URGENT',to_date('07-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (17,'B+',5,'CRITICAL',to_date('08-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('09-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (24,'O+',2,'ROUTINE',to_date('09-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (27,'A-',3,'URGENT',to_date('10-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('11-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (6,'AB+',1,'CRITICAL',to_date('11-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (7,'O-',4,'ROUTINE',to_date('12-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('13-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (8,'A+',2,'URGENT',to_date('13-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (9,'B-',3,'CRITICAL',to_date('14-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('15-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (10,'O+',1,'ROUTINE',to_date('15-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (15,'A-',2,'URGENT',to_date('16-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('17-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (16,'AB+',5,'CRITICAL',to_date('17-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (17,'O+',3,'ROUTINE',to_date('18-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('19-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (24,'A+',2,'URGENT',to_date('19-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (27,'B+',4,'CRITICAL',to_date('20-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('21-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (6,'O-',1,'ROUTINE',to_date('21-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (7,'A+',3,'URGENT',to_date('22-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('23-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (8,'B+',2,'CRITICAL',to_date('23-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (9,'O+',5,'ROUTINE',to_date('24-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('25-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (10,'AB-',1,'URGENT',to_date('25-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (15,'A+',2,'CRITICAL',to_date('26-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('27-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (16,'O+',3,'ROUTINE',to_date('27-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (17,'B-',4,'URGENT',to_date('28-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('29-JAN-2024','dd-mon-yyyy'));
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (24,'A-',2,'CRITICAL',to_date('29-JAN-2024','dd-mon-yyyy'),'PENDING',null);
+insert into request (hospital_id,blood_type,qty_needed,urgency,request_date,status,fulfilled_date) values (27,'O-',1,'ROUTINE',to_date('30-JAN-2024','dd-mon-yyyy'),'FULFILLED',to_date('31-JAN-2024','dd-mon-yyyy'));
+CAMP_PARTICIPATION
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (1,1,to_date('01-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (1,2,to_date('02-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (8,3,to_date('03-jan-2024','dd-mon-yyyy'),2);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (9,4,to_date('04-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (10,5,to_date('05-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (15,6,to_date('06-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (16,7,to_date('07-jan-2024','dd-mon-yyyy'),2);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (17,8,to_date('08-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (24,9,to_date('09-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (27,10,to_date('10-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (8,11,to_date('11-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (9,12,to_date('12-jan-2024','dd-mon-yyyy'),2);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (10,13,to_date('13-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (15,14,to_date('14-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (16,15,to_date('15-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (17,16,to_date('16-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (24,17,to_date('17-jan-2024','dd-mon-yyyy'),2);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (27,18,to_date('18-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (8,19,to_date('19-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (9,20,to_date('20-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (10,21,to_date('21-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (15,22,to_date('22-jan-2024','dd-mon-yyyy'),2);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (16,23,to_date('23-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (17,24,to_date('24-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (24,25,to_date('25-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (27,26,to_date('26-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (8,27,to_date('27-jan-2024','dd-mon-yyyy'),2);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (9,28,to_date('28-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (10,29,to_date('29-jan-2024','dd-mon-yyyy'),1);
+insert into camp_participation (camp_id,donor_id,part_date,units_donated) values (15,30,to_date('30-jan-2024','dd-mon-yyyy'),1);
+
+
+FULFILLMENT
+-- request 2 (a+, urgent)
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (2,3, date '2024-01-03','dr. asif khan');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (2,12,date '2024-01-03','dr. asif khan');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (2,14,date '2024-01-03','dr. asif khan');
+-- request 3 (o+, critical)
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (3,8, date '2024-01-04','nurse sana mir');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (3,25,date '2024-01-04','nurse sana mir');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (3,30,date '2024-01-04','nurse sana mir');
+-- request 5 (ab+, critical)
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (5,9, date '2024-01-06','dr. bilal shah');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (5,13,date '2024-01-06','dr. bilal shah');
+-- request 6 (b+, critical)
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (6,7, date '2024-01-09','dr. tariq mehmood');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (6,24,date '2024-01-09','dr. tariq mehmood');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (6,29,date '2024-01-09','dr. tariq mehmood');
+-- request 8 (a-, urgent)
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (8,5, date '2024-01-13','dr. hassan raza');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (8,15,date '2024-01-13','dr. hassan raza');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (8,10,date '2024-01-13','dr. hassan raza');
+-- request 9 (b-, critical)
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (9,11,date '2024-01-15','nurse fatima noor');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (9,26,date '2024-01-15','nurse fatima noor');
+-- request 11 (o+, routine)
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (11,17,date '2024-01-19','dr. waseem qureshi');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (11,28,date '2024-01-19','dr. waseem qureshi');
+-- request 14 (a+, urgent)
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (14,31,date '2024-01-23','dr. kamran butt');
+-- request 15 (o+, routine)
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (15,27,date '2024-01-25','nurse zara hussain');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (15,32,date '2024-01-25','nurse zara hussain');
+-- request 17 (a+, critical)
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (17,16,date '2024-01-27','dr. imran chaudhry');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (17,4, date '2024-01-27','dr. imran chaudhry');
+-- remaining fulfilled requests
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (23,6, date '2024-02-03','dr. nadia aziz');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (26,33,date '2024-02-10','nurse amna sheikh');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (29,21,date '2024-02-17','dr. shahid nawaz');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (30,22,date '2024-02-20','nurse rabia siddiqui');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (32,18,date '2024-02-25','dr. faisal javed');
+insert into fulfillment (request_id,unit_id,fulfill_date,fulfilled_by) values (34,20,date '2024-03-01','nurse lubna karim'); 
+STAFF
+insert into staff (staff_name, role, bank_id, hospital_id, contact_no, hire_date) values ('Dr Ali Raza', 'DOCTOR', null, 1, '03330000001', date '2022-01-10');
+insert into staff (staff_name, role, bank_id, hospital_id, contact_no, hire_date) values ('Nurse Sana Khan', 'NURSE', null, 4, '03330000002', date '2023-03-15');
+insert into staff (staff_name, role, bank_id, hospital_id, contact_no, hire_date) values ('Ahmed Bilal', 'TECHNICIAN', 1, null, '03330000003', date '2021-06-20');
+insert into staff (staff_name, role, bank_id, hospital_id, contact_no, hire_date) values ('Fatima Noor', 'MANAGER', 2, null, '03330000004', date '2020-09-12');
+insert into staff (staff_name, role, bank_id, hospital_id, contact_no, hire_date) values ('Dr Hassan Sheikh', 'DOCTOR', null, 7, '03330000005', date '2024-02-01');
+
+BLOOD_TEST
+insert into blood_test
+(unit_id, tested_by, test_date, hiv_result, hepatitis_result, malaria_result, overall_status)
+values (1, 3, date '2024-01-11', 'NEGATIVE', 'NEGATIVE', 'NEGATIVE', 'SAFE');
+
+insert into blood_test
+(unit_id, tested_by, test_date, hiv_result, hepatitis_result, malaria_result, overall_status)
+values (2, 3, date '2024-01-13', 'NEGATIVE', 'NEGATIVE', 'NEGATIVE', 'SAFE');
+
+insert into blood_test
+(unit_id, tested_by, test_date, hiv_result, hepatitis_result, malaria_result, overall_status)
+values (3, 3, date '2024-01-15', 'NEGATIVE', 'NEGATIVE', 'NEGATIVE', 'SAFE');
+
+insert into blood_test
+(unit_id, tested_by, test_date, hiv_result, hepatitis_result, malaria_result, overall_status)
+values (4, 3, date '2024-01-17', 'NEGATIVE', 'POSITIVE', 'NEGATIVE', 'UNSAFE');
+
+insert into blood_test
+(unit_id, tested_by, test_date, hiv_result, hepatitis_result, malaria_result, overall_status)
+values (5, 4, date '2024-01-19', 'NEGATIVE', 'NEGATIVE', 'NEGATIVE', 'SAFE');
+
